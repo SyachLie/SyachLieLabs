@@ -74,6 +74,32 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    document.documentElement.style.scrollBehavior = 'auto'; // Prevent CSS smooth scroll from conflicting
+    const startPosition = window.scrollY;
+    const duration = 1200; // 1.2 seconds for an ultra-smooth glide
+    let startTime: number | null = null;
+
+    // easeInOutQuart function for buttery smooth deceleration
+    const easeInOutQuart = (t: number) => t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+
+    const animation = (currentTime: number) => {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+      
+      window.scrollTo(0, startPosition * (1 - easeInOutQuart(progress)));
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      } else {
+        document.documentElement.style.scrollBehavior = 'smooth'; // Restore CSS smooth scroll
+      }
+    };
+
+    requestAnimationFrame(animation);
+  };
+
   return (
     <div className="min-h-screen text-foreground selection:bg-primary/30">
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -167,7 +193,7 @@ function App() {
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.5, y: 20 }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={scrollToTop}
             className="fixed bottom-6 right-6 md:bottom-8 md:right-8 p-3 md:p-4 rounded-full bg-primary text-white shadow-[0_4px_14px_0_rgba(220,38,38,0.39)] hover:bg-primary-hover hover:shadow-[0_6px_20px_rgba(220,38,38,0.23)] hover:-translate-y-1 transition-all duration-300 z-50"
             aria-label="Scroll to top"
           >
