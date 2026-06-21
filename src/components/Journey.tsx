@@ -22,9 +22,9 @@ export default function Journey() {
   return (
     <section id="resume" className="section-padding min-h-screen flex flex-col justify-center">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.15 }}
         transition={{ duration: 0.5 }}
       >
         <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">Resume</span>
@@ -41,9 +41,9 @@ export default function Journey() {
               <motion.div 
                 key={index}
                 className="relative"
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="absolute w-3 h-3 bg-primary rounded-full -left-[1.9rem] top-1.5 border-4 border-background" />
@@ -65,9 +65,9 @@ export default function Journey() {
               <motion.div 
                 key={index}
                 className="relative"
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="absolute w-3 h-3 bg-primary rounded-full -left-[1.9rem] top-1.5 border-4 border-background" />

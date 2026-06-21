@@ -29,9 +29,9 @@ export default function About() {
     <section id="about" className="section-padding">
       <div className="grid md:grid-cols-2 gap-16 items-start">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{ duration: 0.5 }}
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">About me</span>
@@ -50,9 +50,9 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="grid sm:grid-cols-2 gap-8"
         >

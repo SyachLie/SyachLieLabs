@@ -16,9 +16,9 @@ export default function Skills() {
     <section id="skills" className="section-padding bg-section-gradient">
       <div className="grid md:grid-cols-2 gap-16">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{ duration: 0.5 }}
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">Skills</span>
@@ -39,7 +39,7 @@ export default function Skills() {
                     className="bg-primary h-2 rounded-full"
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.percentage}%` }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.15 }}
                     transition={{ duration: 1, delay: index * 0.1 }}
                   />
                 </div>
@@ -49,9 +49,9 @@ export default function Skills() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="bg-muted-bg p-8 rounded-3xl border border-border">

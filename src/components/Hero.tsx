@@ -9,8 +9,9 @@ export default function Hero() {
       <div className="w-full grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         <div className="flex flex-col order-2 lg:order-1">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.5 }}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20">
@@ -20,8 +21,9 @@ export default function Hero() {
 
           <motion.h1 
             className="heading-1 leading-[1.1]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             Crafting digital <br />
@@ -31,8 +33,9 @@ export default function Hero() {
 
           <motion.p 
             className="text-xl md:text-2xl text-muted max-w-2xl mb-12 mt-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Hi, I'm Ezzy Auriel Syach Lie — a Web developer & UI designer focused on building modern, accessible, and beautifully simple products.
@@ -40,8 +43,9 @@ export default function Hero() {
 
           <motion.div 
             className="flex flex-wrap gap-4 mb-8 lg:mb-0"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <a href="#portfolio" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-medium transition-colors flex items-center gap-2">
@@ -55,8 +59,9 @@ export default function Hero() {
 
         <motion.div 
           className="relative order-1 lg:order-2 w-56 h-56 md:w-72 md:h-72 lg:w-full lg:h-auto lg:aspect-square mx-auto lg:mx-0 lg:ml-auto max-w-md"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.8, x: 50 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 

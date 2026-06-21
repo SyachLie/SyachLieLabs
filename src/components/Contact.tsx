@@ -73,9 +73,9 @@ export default function Contact() {
     <section id="contact" className="section-padding">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{ duration: 0.5 }}
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">Contact</span>
@@ -88,9 +88,9 @@ export default function Contact() {
 
       <motion.div 
         className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.15 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         {/* Social Links (Left Side) */}
