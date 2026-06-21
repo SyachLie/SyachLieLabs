@@ -6,7 +6,6 @@ import Skills from './components/Skills';
 import Journey from './components/Journey';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import logoImg from './assets/sll-logo.jpeg';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,9 +64,7 @@ function App() {
           : "bg-transparent border-b border-transparent"
       }`}>
         <div className="w-full px-6 md:px-12 lg:px-24 h-20 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <img src={logoImg} alt="SyachLieLabs Logo" className="h-10 w-auto object-contain rounded-lg" />
-          </a>
+          <a href="#" className="text-xl font-bold tracking-tighter text-foreground">SyachLieLabs<span className="text-primary">.</span></a>
           
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-8 text-sm font-medium">
