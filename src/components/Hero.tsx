@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import profileImg from '../assets/profilephoto/myselfnih.jpeg';
+import cvFile from '../assets/cv/cv_ats_ezzy.pdf';
 
 export default function Hero() {
   return (
@@ -46,7 +47,7 @@ export default function Hero() {
             <a href="#portfolio" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-medium transition-colors flex items-center gap-2">
               View my work <ArrowRight size={18} />
             </a>
-            <a href="#" className="bg-muted-bg hover:bg-muted-bg/80 text-foreground px-8 py-4 rounded-full font-medium transition-colors border border-border flex items-center gap-2">
+            <a href={cvFile} download="CV_Ezzy_Auriel_Syach_Lie.pdf" className="bg-muted-bg hover:bg-muted-bg/80 text-foreground px-8 py-4 rounded-full font-medium transition-colors border border-border flex items-center gap-2">
               Download CV <Download size={18} />
             </a>
           </motion.div>
