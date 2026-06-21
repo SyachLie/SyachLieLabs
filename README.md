@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# SyachLieLabs — Designer & Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **SyachLieLabs**, my personal portfolio website built to showcase my journey, skills, and projects as a Designer and Developer. The site features a modern, clean, and highly interactive user interface designed with a focus on aesthetics and performance.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+*(You can add your live hosting link here, e.g., https://syachlielabs.vercel.app)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- **Modern & Premium UI:** Glassmorphism effects, smooth gradients, and a carefully curated typography system.
+- **Persistent Dark/Light Mode:** Seamless theme switching that remembers your preference using `localStorage`, optimized to prevent FOUC (Flash of Unstyled Content) on load.
+- **Interactive Animations:** Powered by Framer Motion for smooth scroll reveals, floating elements, and interactive hover states on cards.
+- **Fully Responsive:** Beautifully adapted for desktop, tablet, and mobile devices.
+- **Custom Components:** Includes custom-built SVG icons, an interactive email modal, and a dynamic portfolio gallery with categorization (Projects & Certificates).
+- **Performance Optimized:** Smooth scrolling and fixed background optimizations to prevent rendering lag.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** [React 18](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Sections Overview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Hero:** An engaging introduction with a dynamic floating profile picture.
+2. **About Me:** A brief introduction to my design and development philosophy.
+3. **Skills:** Categorized tech stack (Frontend, Backend, and Tools).
+4. **Journey:** An interactive timeline showcasing my educational and professional experience.
+5. **Portfolio:** A gallery of my recent projects and certifications.
+6. **Contact:** A sleek contact section featuring a built-in email popup modal and social links.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 💻 Running Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run this project on your local machine, follow these steps:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SyachLie/SyachLieLabs.git
+   cd SyachLieLabs
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   Navigate to `http://localhost:5173`
+
+## 🤝 Let's Connect
+
+Feel free to reach out if you're looking for a developer, have a question, or just want to connect!
+
+- **GitHub:** [@SyachLie](https://github.com/SyachLie)
+- **LinkedIn:** [Ezzy Auriel Syach Lie](https://www.linkedin.com/in/ezzy-auriel-syach-lie-a5783a40a/)
+
+---
+*Designed & Built by Ezzy Auriel Syach Lie*
