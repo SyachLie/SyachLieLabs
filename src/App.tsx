@@ -101,7 +101,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen text-foreground selection:bg-primary/30">
+    <div className="min-h-screen text-foreground selection:bg-primary/30 overflow-x-hidden w-full max-w-[100vw] relative">
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
           ? "bg-background/80 backdrop-blur-md border-b border-border" 
