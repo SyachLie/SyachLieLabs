@@ -2,9 +2,6 @@
 
 Welcome to **SyachLieLabs**, my personal portfolio website built to showcase my journey, skills, and projects as a Designer and Developer. The site features a modern, clean, and highly interactive user interface designed with a focus on aesthetics and performance.
 
-## 🚀 Live Demo
-*(You can add your live hosting link here, e.g., https://syachlielabs.vercel.app)*
-
 ## ✨ Key Features
 
 - **Modern & Premium UI:** Glassmorphism effects, smooth gradients, and a carefully curated typography system.
