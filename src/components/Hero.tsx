@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import profileImg from '../assets/profilephoto/myselfnih.jpeg';
-import cvFile from '../assets/cv/cv_ats_ezzy.pdf';
+import cvFile from '../assets/cv/CV_Ezzy_Auriel_Syach_Lie.pdf';
 
 export default function Hero() {
   return (
